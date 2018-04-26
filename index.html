@@ -1,49 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--Jquery and JS-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <!--CDN Bootstrap 3-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <!--Personal CSS file-->
-        <link rel="stylesheet" href="website/css/CSS01.css" type="text/css">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-        <title>Homepage</title>
-    </head>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <body>
-        <header>
-            <h1 class="title">Simone Vizzuso</h1>
-        </header>
+    <!--Personal CSS file-->
+    <link rel="stylesheet" href="/website/css/CSS01.css" type="text/css">
 
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand">Benvenuto!</a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="website/vlog.html">Vlog</a></li>
-                    <li><a href="website/test.html">Test</a></li>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <title>Homepage</title>
+</head>
+
+<body>
+<nav class="orange">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Simone Vizzuso</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="website/test.html">Test</a></li>
+        </ul>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="website/vlog.html">Vlog</a></li>
+        </ul>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="website/vlog.html">Vlog</a></li>
+            <li><a href="website/test.html">Test</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+
+<article>
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h1 class="header center orange-text">Homepage</h1>
+            <div class="row center">
+                <img src="website/resource/source.gif">
+                <h4 class="header col s12 light">Benvenuti nella mia Homepage!</h4>
+                <h5 class="header col s12 light">In alto è presente un menù di navigazione</h5>
+                <h5 class="header col s12 light">Qui in basso sono presenti i miei social e la mia descrizione</h5>
+            </div>
+            <br><br>
+        </div>
+    </div>
+</article>
+
+<footer class="page-footer orange">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Simone Vizzuso</h5>
+                <p class="grey-text text-lighten-4">Inizia a studiare ma stancatosi della vita monotona si da al circo. L'html è un primo esperimento per conquistare il mondo. Da qui il paragrafo verrà riempito di testo per capire come si comporta su più righe.</p>
+
+
+            </div>
+            <div class="col l3 s12">
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Social</h5>
+                <ul>
+                    <li><a class="white-text" href="https://facebook.com/simonevizzuso">Facebook <img width="16" height="16" src="/website/resource/icon-facebook.png"></a></li>
+                    <li><a class="white-text" href="https://twitter.com/simonevizzuso">Twitter <img width="16" height="16" src="/website/resource/icon-twitter.png"></a></li>
+                    <li><a class="white-text" href="https://youtube.com/simonevizzuso">Youtube <img width="16" height="16" src="/website/resource/icon-youtube.png"></a></li>
                 </ul>
             </div>
-        </nav>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <p align="center">Made with ❤ by <a class="orange-text text-lighten-3" href="https://github.com/SimoneVizzuso">Simone Vizzuso</a> with <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
 
-        <article>
-            <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
-            <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
-            <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
-        </article>
-
-        <footer>
-            <div class="container">
-                <hr>
-                <p align="center">Made with ❤ by <a href="https://github.com/SimoneVizzuso">Simone Vizzuso</a> ©. All rights reserved.</p>
-            </div>
-        </footer>
-    </body>
-
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/website/js/materialize.min.js"></script>
+<script type="text/javascript" src="/website/js/init.js"></script>
+</body>
 </html>
